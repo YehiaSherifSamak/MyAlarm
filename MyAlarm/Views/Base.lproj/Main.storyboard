@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-L.ttf">
+            <string>Ubuntu-Light</string>
+        </array>
+        <array key="Ubuntu-M.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MyViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MyAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="140" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KId-uh-Rzz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Acu-YK-5SF">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make Me Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOv-Cb-U8I">
+                                            <rect key="frame" x="155.33333333333334" y="22" width="103.33333333333334" height="25"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLp-0f-4cR">
+                                            <rect key="frame" x="183" y="78" width="48" height="4"/>
+                                            <color key="backgroundColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="4" id="4CR-la-oOs"/>
+                                                <constraint firstAttribute="width" constant="48" id="5kg-s2-1h1"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="4" id="xCL-hH-JrU"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="N2Y-FC-cDl">
+                                            <rect key="frame" x="28" y="96" width="358" height="32"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cm-CT-thw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="178" height="32"/>
+                                                    <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <state key="normal" title="Schedule">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-1w-1Gr">
+                                                    <rect key="frame" x="180" y="0.0" width="178" height="32"/>
+                                                    <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <state key="normal" title="Meetings">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="5yq-sP-AcV"/>
+                                            </constraints>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V92-RT-GZa">
+                                            <rect key="frame" x="0.0" y="128" width="414" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="lam-bR-2FA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="V92-RT-GZa" secondAttribute="trailing" id="1Nx-Mh-eJi"/>
+                                        <constraint firstItem="N2Y-FC-cDl" firstAttribute="leading" secondItem="Acu-YK-5SF" secondAttribute="leading" constant="28" id="5SJ-co-aOD"/>
+                                        <constraint firstAttribute="bottom" secondItem="V92-RT-GZa" secondAttribute="bottom" id="HjY-aR-WhJ"/>
+                                        <constraint firstItem="V92-RT-GZa" firstAttribute="leading" secondItem="Acu-YK-5SF" secondAttribute="leading" id="KNh-dh-NqZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="N2Y-FC-cDl" secondAttribute="trailing" constant="28" id="LYb-Ac-9Qh"/>
+                                        <constraint firstItem="uLp-0f-4cR" firstAttribute="top" secondItem="sOv-Cb-U8I" secondAttribute="bottom" constant="31" id="NYg-F8-wnz"/>
+                                        <constraint firstItem="sOv-Cb-U8I" firstAttribute="centerX" secondItem="Acu-YK-5SF" secondAttribute="centerX" id="Qk6-Vi-lRh"/>
+                                        <constraint firstItem="N2Y-FC-cDl" firstAttribute="top" secondItem="uLp-0f-4cR" secondAttribute="bottom" constant="14" id="Xx6-E9-3Fe"/>
+                                        <constraint firstItem="uLp-0f-4cR" firstAttribute="centerX" secondItem="Acu-YK-5SF" secondAttribute="centerX" id="fIz-UC-dLo"/>
+                                        <constraint firstItem="V92-RT-GZa" firstAttribute="top" secondItem="N2Y-FC-cDl" secondAttribute="bottom" id="hmo-Hm-e2M"/>
+                                        <constraint firstItem="sOv-Cb-U8I" firstAttribute="top" secondItem="Acu-YK-5SF" secondAttribute="top" constant="22" id="hvn-RY-mys"/>
+                                        <constraint firstItem="N2Y-FC-cDl" firstAttribute="centerX" secondItem="Acu-YK-5SF" secondAttribute="centerX" id="kTB-RX-sBv"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="alarmCell" id="SeF-9k-E6J" customClass="AlarmTableViewCell" customModule="MyAlarm" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="206" width="414" height="89.333335876464844"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SeF-9k-E6J" id="Jm6-mh-YW7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="89.333335876464844"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKk-vy-BYY">
+                                                    <rect key="frame" x="28" y="20.333333333333332" width="21.333333333333329" height="15.999999999999996"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="14"/>
+                                                    <color key="textColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6nQ-Iu-DRv">
+                                                    <rect key="frame" x="337" y="12.666666666666664" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="07:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-aG-2kT">
+                                                    <rect key="frame" x="164.66666666666666" y="0.0" width="84.666666666666657" height="38.333333333333336"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="alarmCell"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Start / Weekly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw4-MN-Ct5">
+                                                    <rect key="frame" x="159.66666666666666" y="44.333333333333336" width="94.666666666666657" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3p4-eJ-KnB">
+                                                    <rect key="frame" x="53" y="-3" width="98" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCe-Bg-cB3">
+                                                    <rect key="frame" x="0.0" y="56.333333333333343" width="414" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="33" id="5Eg-A7-8VD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Byd-aG-2kT" firstAttribute="top" secondItem="Jm6-mh-YW7" secondAttribute="top" id="5cl-oO-nxA"/>
+                                                <constraint firstItem="6nQ-Iu-DRv" firstAttribute="centerY" secondItem="Jm6-mh-YW7" secondAttribute="centerY" constant="-16.5" id="5st-Z1-gFK"/>
+                                                <constraint firstItem="dw4-MN-Ct5" firstAttribute="centerX" secondItem="Jm6-mh-YW7" secondAttribute="centerX" id="6k8-hV-RAS"/>
+                                                <constraint firstItem="yCe-Bg-cB3" firstAttribute="top" secondItem="dw4-MN-Ct5" secondAttribute="bottom" id="7FV-mC-LtZ"/>
+                                                <constraint firstItem="wKk-vy-BYY" firstAttribute="centerY" secondItem="Jm6-mh-YW7" secondAttribute="centerY" constant="-16.5" id="Gbq-yU-RXD"/>
+                                                <constraint firstAttribute="bottom" secondItem="yCe-Bg-cB3" secondAttribute="bottom" id="Vgu-h1-538"/>
+                                                <constraint firstAttribute="trailing" secondItem="yCe-Bg-cB3" secondAttribute="trailing" id="ZwM-ww-LM6"/>
+                                                <constraint firstItem="dw4-MN-Ct5" firstAttribute="top" secondItem="Byd-aG-2kT" secondAttribute="bottom" constant="6" id="bFK-ry-ZF5"/>
+                                                <constraint firstItem="yCe-Bg-cB3" firstAttribute="leading" secondItem="Jm6-mh-YW7" secondAttribute="leading" id="g98-ub-HC6"/>
+                                                <constraint firstItem="wKk-vy-BYY" firstAttribute="leading" secondItem="Jm6-mh-YW7" secondAttribute="leading" constant="28" id="gYX-uc-T79"/>
+                                                <constraint firstItem="Byd-aG-2kT" firstAttribute="top" secondItem="Jm6-mh-YW7" secondAttribute="top" id="oT8-Ba-WcB"/>
+                                                <constraint firstItem="Byd-aG-2kT" firstAttribute="centerX" secondItem="Jm6-mh-YW7" secondAttribute="centerX" id="pwA-OI-cuV"/>
+                                                <constraint firstAttribute="trailing" secondItem="6nQ-Iu-DRv" secondAttribute="trailing" constant="28" id="yLt-Wt-ED4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="AmOrPmLabel" destination="wKk-vy-BYY" id="iEu-gT-bvp"/>
+                                            <outlet property="alarmTypeLabel" destination="dw4-MN-Ct5" id="MMF-eB-1rt"/>
+                                            <outlet property="onOrOffSwitch" destination="6nQ-Iu-DRv" id="kwn-Tm-WNf"/>
+                                            <outlet property="timeLabel" destination="Byd-aG-2kT" id="OPa-Ow-Jip"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4X-a1-h9u">
+                                <rect key="frame" x="28" y="789" width="358" height="38"/>
+                                <color key="backgroundColor" red="0.69019607839999997" green="0.23137254900000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="5lp-Fh-GUf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="16"/>
+                                <state key="normal" title="add new">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addAlramButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FD5-QA-KIk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W4X-a1-h9u" secondAttribute="trailing" constant="28" id="Asd-5U-Qyq"/>
+                            <constraint firstItem="KId-uh-Rzz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bpc-bP-D5s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KId-uh-Rzz" secondAttribute="trailing" id="Non-GB-8a2"/>
+                            <constraint firstItem="KId-uh-Rzz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dAe-8S-utY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KId-uh-Rzz" secondAttribute="bottom" id="dHE-j6-Xty"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W4X-a1-h9u" secondAttribute="bottom" constant="35" id="tsm-Fx-zxW"/>
+                            <constraint firstItem="W4X-a1-h9u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="txg-TO-Nar"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addAlarmButton" destination="W4X-a1-h9u" id="Zpw-CJ-XPK"/>
+                        <outlet property="alarmsTableView" destination="KId-uh-Rzz" id="Qrc-0Z-MXL"/>
+                        <outlet property="meetingButton" destination="Pmb-1w-1Gr" id="WHL-Z7-ZLf"/>
+                        <outlet property="scheduleButton" destination="2Cm-CT-thw" id="ECV-sp-d1A"/>
+                        <segue destination="R0R-5t-Bxh" kind="show" identifier="addAlarmSegue" id="6l2-Eg-F3G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--Add New Alarm View Controller-->
+        <scene sceneID="Xdh-cU-OZB">
+            <objects>
+                <viewController id="R0R-5t-Bxh" customClass="AddNewAlarmViewController" customModule="MyAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eN0-bf-6ps">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apJ-A1-oP7">
+                                <rect key="frame" x="29" y="94" width="356" height="620"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set New Alarm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFK-kk-wKk">
+                                        <rect key="frame" x="116.33333333333334" y="0.0" width="123.66666666666666" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
+                                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vb4-QI-2m4">
+                                        <rect key="frame" x="78" y="80.333333333333343" width="200" height="70"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="07" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hhn-TS-vgi">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="70"/>
+                                                <color key="backgroundColor" red="0.69019607839999997" green="0.23137254900000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="66l-ew-nGC"/>
+                                                    <constraint firstAttribute="height" constant="70" id="pfI-B4-Zw4"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="38"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6KS-PM-3Uc">
+                                                <rect key="frame" x="105" y="0.0" width="95" height="70"/>
+                                                <color key="backgroundColor" red="0.69019607839999997" green="0.23137254900000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="Ccd-bv-hOk"/>
+                                                    <constraint firstAttribute="width" constant="95" id="xQe-xV-E9Q"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="38"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CDA-zs-us5">
+                                        <rect key="frame" x="143" y="170.33333333333331" width="70" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivv-3b-6AZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
+                                                <state key="normal" title="AM">
+                                                    <color key="titleColor" red="0.69019607839999997" green="0.23137254900000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="amButtonPressed:" destination="R0R-5t-Bxh" eventType="touchUpInside" id="fN9-p0-dkW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYQ-sq-OnL">
+                                                <rect key="frame" x="40" y="0.0" width="30" height="33"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
+                                                <state key="normal" title="PM">
+                                                    <color key="titleColor" red="0.70980392160000005" green="0.70980392160000005" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pmButtonPressed:" destination="R0R-5t-Bxh" eventType="touchUpInside" id="QSH-nu-cIw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LQ-d4-hSP">
+                                        <rect key="frame" x="0.0" y="254.33333333333334" width="78" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
+                                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type your message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t96-sq-EmP">
+                                        <rect key="frame" x="0.0" y="286.66666666666669" width="356" height="15.666666666666686"/>
+                                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYF-hD-F4q">
+                                        <rect key="frame" x="0.0" y="582" width="356" height="38"/>
+                                        <color key="backgroundColor" red="0.69019607839999997" green="0.23137254900000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="vtt-jj-qXC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="16"/>
+                                        <state key="normal" title="Add Alarm">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addAlarmButtonPressed:" destination="R0R-5t-Bxh" eventType="touchUpInside" id="bAB-SP-7Tc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="t96-sq-EmP" firstAttribute="top" secondItem="7LQ-d4-hSP" secondAttribute="bottom" constant="12" id="6Mi-Kf-VJ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="t96-sq-EmP" secondAttribute="trailing" id="6YA-fB-KTM"/>
+                                    <constraint firstItem="CYF-hD-F4q" firstAttribute="leading" secondItem="apJ-A1-oP7" secondAttribute="leading" id="8c0-BV-410"/>
+                                    <constraint firstItem="7LQ-d4-hSP" firstAttribute="leading" secondItem="apJ-A1-oP7" secondAttribute="leading" id="8en-t6-4gD"/>
+                                    <constraint firstItem="7LQ-d4-hSP" firstAttribute="top" secondItem="vb4-QI-2m4" secondAttribute="bottom" constant="104" id="F94-xD-ahG"/>
+                                    <constraint firstAttribute="trailing" secondItem="CYF-hD-F4q" secondAttribute="trailing" id="GXJ-vy-Pp5"/>
+                                    <constraint firstItem="CDA-zs-us5" firstAttribute="centerX" secondItem="apJ-A1-oP7" secondAttribute="centerX" id="Hib-ck-OFj"/>
+                                    <constraint firstItem="hFK-kk-wKk" firstAttribute="top" secondItem="apJ-A1-oP7" secondAttribute="top" id="LGV-aQ-4yY"/>
+                                    <constraint firstItem="vb4-QI-2m4" firstAttribute="top" secondItem="hFK-kk-wKk" secondAttribute="bottom" constant="60" id="OsN-PY-lgW"/>
+                                    <constraint firstItem="hFK-kk-wKk" firstAttribute="centerX" secondItem="apJ-A1-oP7" secondAttribute="centerX" id="V9e-HC-TB9"/>
+                                    <constraint firstItem="t96-sq-EmP" firstAttribute="leading" secondItem="apJ-A1-oP7" secondAttribute="leading" id="Wwq-MO-9Z0"/>
+                                    <constraint firstAttribute="bottom" secondItem="CYF-hD-F4q" secondAttribute="bottom" id="awS-rn-c8Q"/>
+                                    <constraint firstItem="CDA-zs-us5" firstAttribute="top" secondItem="vb4-QI-2m4" secondAttribute="bottom" constant="20" id="bMq-IH-Xvj"/>
+                                    <constraint firstItem="vb4-QI-2m4" firstAttribute="centerX" secondItem="apJ-A1-oP7" secondAttribute="centerX" id="qI1-A1-UkU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="o6n-zW-cc3" firstAttribute="trailing" secondItem="apJ-A1-oP7" secondAttribute="trailing" constant="29" id="1Ze-qk-gdK"/>
+                            <constraint firstItem="apJ-A1-oP7" firstAttribute="leading" secondItem="o6n-zW-cc3" secondAttribute="leading" constant="29" id="75z-0a-NLx"/>
+                            <constraint firstItem="apJ-A1-oP7" firstAttribute="top" secondItem="o6n-zW-cc3" secondAttribute="top" constant="94" id="ef5-qk-n8x"/>
+                            <constraint firstItem="o6n-zW-cc3" firstAttribute="bottom" secondItem="apJ-A1-oP7" secondAttribute="bottom" constant="94" id="uNM-A8-9cL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o6n-zW-cc3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mpe-Ab-1PZ"/>
+                    <connections>
+                        <outlet property="addAlarmButton" destination="CYF-hD-F4q" id="Ron-C7-YzV"/>
+                        <outlet property="amButtton" destination="ivv-3b-6AZ" id="oEr-Qe-k6x"/>
+                        <outlet property="hoursTextField" destination="Hhn-TS-vgi" id="0h8-6t-OzR"/>
+                        <outlet property="messageTextField" destination="t96-sq-EmP" id="1kv-Ux-KAa"/>
+                        <outlet property="minutesTextField" destination="6KS-PM-3Uc" id="TkR-YJ-L58"/>
+                        <outlet property="pmButton" destination="wYQ-sq-OnL" id="cMp-zu-WIp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyU-jD-h3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="129.31034482758622"/>
+        </scene>
+    </scenes>
+</document>
