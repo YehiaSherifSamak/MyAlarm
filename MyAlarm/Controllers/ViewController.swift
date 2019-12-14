@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwipeCellKit
 
 class ViewController: UIViewController {
 
@@ -61,6 +62,7 @@ extension ViewController: UITableViewDataSource{
         let alarm: Alarm = alarms[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "alarmCell") as! AlarmTableViewCell
         cell.setAlarm(for: alarm)
+        cell.delegate = self
         return cell
     }
 }
@@ -77,7 +79,25 @@ extension ViewController: AlarmAddingProtocol {
         alarms.append(alarm)
         alarmsTableView.reloadData()
     }
-    
+}
+
+
+extension ViewController: SwipeTableViewCellDelegate{
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        guard orientation == .right else { return nil }
+
+         let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
+            let alarm = self.alarms[indexPath.row]
+            DatabaseManger.deleteAlaram(alarm)
+            self.alarms.remove(at: indexPath.row)
+            self.alarmsTableView.reloadData()
+         }
+
+        
+         deleteAction.image = UIImage(named: "delete-icon")
+
+         return [deleteAction]
+    }
     
 }
 

@@ -9,7 +9,7 @@
 import UIKit
 import SwipeCellKit
 
-class AlarmTableViewCell: UITableViewCell {
+class AlarmTableViewCell: SwipeTableViewCell {
     
     @IBOutlet weak var amOrPmLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!

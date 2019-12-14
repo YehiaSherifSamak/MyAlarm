@@ -24,5 +24,12 @@ class DatabaseManger{
         return Array(alarms)
     }
     
+    static func deleteAlaram(_ alarm: Alarm){
+        let realm = try! Realm()
+        try! realm.write() {
+            realm.delete(alarm)
+        }
+    }
+    
     
 }
