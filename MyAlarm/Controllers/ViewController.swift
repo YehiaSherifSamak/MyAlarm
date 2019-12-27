@@ -9,6 +9,11 @@
 import UIKit
 import SwipeCellKit
 
+
+protocol AlarmAddingProtocol {
+    func addingAlarmToTheTable(alarm: Alarm)
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var addAlarmButton: UIButton!
@@ -24,8 +29,7 @@ class ViewController: UIViewController {
         alarms = DatabaseManger.queryAllAlarms()
         alarmsTableView.delegate = self
         alarmsTableView.dataSource = self
-        let noticationManger = NotificationManger()
-        noticationManger.requestPermission()
+        NotificationManger.shared.requestPermission()
     }
     
     func settingUpUIElement(){

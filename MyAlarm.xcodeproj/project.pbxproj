@@ -29,7 +29,6 @@
 		85117C35239FEFF30077D60F /* AddNewAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85117C34239FEFF30077D60F /* AddNewAlarmViewController.swift */; };
 		85117C3A23A15D4D0077D60F /* DatabaseManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85117C3923A15D4D0077D60F /* DatabaseManger.swift */; };
 		85117C3E23A177D80077D60F /* NotificationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85117C3D23A177D80077D60F /* NotificationManger.swift */; };
-		85117C4123A3F6900077D60F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85117C4023A3F6900077D60F /* Protocols.swift */; };
 		85117C4623A3FF410077D60F /* BellSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 85117C4523A3FF410077D60F /* BellSound.wav */; };
 		85117C4823A413790077D60F /* soundy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 85117C4723A413790077D60F /* soundy.m4a */; };
 		E6A26777190985B26CC085D8 /* Pods_MyAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161A60293BC940B80DF28211 /* Pods_MyAlarm.framework */; };
@@ -63,7 +62,6 @@
 		85117C34239FEFF30077D60F /* AddNewAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAlarmViewController.swift; sourceTree = "<group>"; };
 		85117C3923A15D4D0077D60F /* DatabaseManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManger.swift; sourceTree = "<group>"; };
 		85117C3D23A177D80077D60F /* NotificationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManger.swift; sourceTree = "<group>"; };
-		85117C4023A3F6900077D60F /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		85117C4523A3FF410077D60F /* BellSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BellSound.wav; sourceTree = "<group>"; };
 		85117C4723A413790077D60F /* soundy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundy.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				85117C4223A3FE780077D60F /* Sounds */,
-				85117C3F23A3F6660077D60F /* Protocols */,
 				85117C3C23A177BA0077D60F /* Notifcation */,
 				85117C3823A15D360077D60F /* Database */,
 				85117C1F239C5CA60077D60F /* Fonts */,
@@ -192,14 +189,6 @@
 				85117C3D23A177D80077D60F /* NotificationManger.swift */,
 			);
 			path = Notifcation;
-			sourceTree = "<group>";
-		};
-		85117C3F23A3F6660077D60F /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				85117C4023A3F6900077D60F /* Protocols.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		85117C4223A3FE780077D60F /* Sounds */ = {
@@ -361,7 +350,6 @@
 				85117C1E239C14300077D60F /* UIExtenstions.swift in Sources */,
 				85117C35239FEFF30077D60F /* AddNewAlarmViewController.swift in Sources */,
 				85117C3E23A177D80077D60F /* NotificationManger.swift in Sources */,
-				85117C4123A3F6900077D60F /* Protocols.swift in Sources */,
 				85117C1A2399AA6E0077D60F /* Alarm.swift in Sources */,
 				85117C0323999BD20077D60F /* SceneDelegate.swift in Sources */,
 				85117C3A23A15D4D0077D60F /* DatabaseManger.swift in Sources */,

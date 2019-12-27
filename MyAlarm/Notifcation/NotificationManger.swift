@@ -13,7 +13,12 @@ import UserNotifications
 
 
 class NotificationManger{
-    var alarms = [Alarm]()
+    var alarms: [Alarm]
+    static let shared = NotificationManger()
+    
+    private init(){
+        alarms = [Alarm]()
+    }
     
     func requestPermission() -> Void {
         UNUserNotificationCenter

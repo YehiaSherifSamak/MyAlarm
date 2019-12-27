@@ -81,10 +81,9 @@ class AddNewAlarmViewController: UIViewController {
     }
     
     func makeNotification(alarm: Alarm){
-        let notificationManger: NotificationManger = NotificationManger()
-         notificationManger.requestPermission()
-        notificationManger.addNotification(alarm: alarm)
-        notificationManger.scheduleNotifications()
+        NotificationManger.shared.requestPermission()
+        NotificationManger.shared.addNotification(alarm: alarm)
+        NotificationManger.shared.scheduleNotifications()
     }
     
     
